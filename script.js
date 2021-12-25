@@ -12,3 +12,16 @@ function compute()
     var rateval=document.getElementById("rate").value;
     document.getElementById("val").innerText=rateval;
 }
+function getSliderValue()
+    {
+        document.getElementById("ratespan").innerHTML=document.getElementById("rate").value;
+    }
+function validateAmount()
+    {
+        var principal=document.getElementById("principal").value;
+        var biggerThanZero=parseInt(principal)>0;
+        if(!biggerThanZero){
+            alert("Enter a positive number"):
+            document.getElementById("principal").focus();
+        }
+    }
