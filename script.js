@@ -10,12 +10,8 @@ function compute()
  function updateRate()
 {
     var rateval=document.getElementById("rate").value;
-    document.getElementById("val").innerText=rateval;
+    document.getElementById("rate_val").innerText=rateval;
 }
-function getSliderValue()
-    {
-        document.getElementById("ratespan").innerHTML=document.getElementById("rate").value;
-    }
 function validateAmount()
     {
         var principal=document.getElementById("principal").value;
